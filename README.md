@@ -25,6 +25,6 @@ To run `words-service` execute the following command from the project root:
 
 Download and install [Posgtresql 9.6](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads).
 
-Create a databasw with name `words`. And add an extension `uuid_ossp` (generates universally unique identifiers).
+Create a database with name `words`. And add an extension `uuid_ossp` (generates universally unique identifiers).
 
 All necessary schemas will be generated with [Liquibase](https://www.liquibase.org/).
