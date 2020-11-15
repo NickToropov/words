@@ -1,6 +1,6 @@
 # Words
 
-This is a demo project to test Spring boot + Angular + WebSockets.
+This is a demo project to test Spring boot + Angular + WebSockets. Video: https://youtu.be/BYYaU7GpIuI. 
 
 ## Run with `docker`
 To run project with docker execute the following commands from the project root:
