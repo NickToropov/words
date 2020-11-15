@@ -1,0 +1,11 @@
+subprojects {
+
+  apply plugin : "java"
+
+  group = 'com.akvelon'
+  sourceCompatibility = 1.8
+
+  repositories {
+    mavenCentral()
+  }
+}

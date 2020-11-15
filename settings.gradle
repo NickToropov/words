@@ -1,0 +1,3 @@
+rootProject.name = 'words'
+
+include 'ui', 'words-service', 'gateway-service'

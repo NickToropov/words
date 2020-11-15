@@ -1,0 +1,17 @@
+<mat-card *ngIf="word">
+  <form #carForm="ngForm" (ngSubmit)="save()">
+    <mat-card-header>
+      <h2>{{word.id ? 'Edit' : 'Add'}} word</h2>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input matInput name="name" placeholder="Word name" [(ngModel)]="name" required />
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button color="secondary" (click)="goBack()" type="button">Cancel</button>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!carForm.form.valid">Save</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </form>
+</mat-card>

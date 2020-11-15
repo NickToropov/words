@@ -1,0 +1,18 @@
+zuul:
+  prefix: /api
+  routes:
+    words:
+      url: http://${WORDS_SERVICE_HOST}:8089
+
+ribbon:
+  eureka:
+    enabled: false
+
+server:
+  port: 8081
+
+logging:
+  level:
+    com:
+      ntoropov:
+        gatewayservice: DEBUG

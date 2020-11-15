@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>{{title}}</span>
+  <span class="example-fill-remaining-space"></span>
+</mat-toolbar>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+

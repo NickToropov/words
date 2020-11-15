@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="nt" id="2018-10-17--01-initial-schema-import-1">
+        <createTable tableName="words">
+            <column name="id" type="uuid" defaultValueComputed="uuid_generate_v1()" >
+                <constraints primaryKey="true" primaryKeyName="words_pk" unique="true" nullable="false" />
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false" />
+            </column>
+            <column name="create_at" type="datetime" defaultValueComputed="${now}">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="nt" id="2020-11-14--01-initial-schema-import-2">
+        <insert tableName="words">
+            <column name="id">f6b2eb4b-ff96-41e8-ae2a-69ef9ca57d56</column>
+            <column name="name">Test1</column>
+        </insert>
+        <insert tableName="words">
+            <column name="id">81fb23ab-915b-4dfb-acb1-5e8ef3bf3789</column>
+            <column name="name">Test2</column>
+        </insert>
+        <insert tableName="words">
+            <column name="id">df9f4f91-2933-4de4-819b-a89a8f091dc7</column>
+            <column name="name">Test3</column>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

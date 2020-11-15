@@ -1,0 +1,18 @@
+.mat-nav-list a {
+    display: block;
+    width: 100%;
+}
+.mat-nav-list a h3 {
+    margin: 0;
+}
+.mat-card-header {
+    padding: 10px 0;
+}
+.mat-card-header h3 {
+    margin: 10px -0.8em;
+    flex-grow: 1;
+}
+.mat-card-content {
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
